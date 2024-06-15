@@ -28,6 +28,7 @@ header nav li {
 header nav li a {
    color: var(--color-text);
    text-decoration: none;
+   font-weight: normal;
    margin-left: 1rem;
    font-size: 20px;
    font-weight: 700;
@@ -36,7 +37,8 @@ header nav li a {
 .home:hover,
 .creed:hover,
 .characters:hover,
-.premiumEdition:hover {
+.premiumEdition:hover,
+.newsletter:hover {
    color: var(--second-color);
    transition: 0.4s;
    font-size: 23px;
@@ -140,6 +142,7 @@ section .container button {
 
 /* characters */
 #characters {
+   padding: 1rem;
    background-image: url(img/second_background.jpg);
    background-repeat: no-repeat;
    background-size: cover;
@@ -152,7 +155,7 @@ section .container button {
 
 #characters .container {
    width: 900px;
-   height: 90%;
+   height: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -247,4 +250,72 @@ section .container button {
 
 #premiumEdition .container a button {
    background-color: var(--second-color);
+}
+
+#newsletter {
+   background-image: url(img/background_newsletter.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   padding: 10rem 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#newsletter .newsletter-content {
+   display: flex;
+   max-width: 1440px;
+   margin: 0 auto;
+   gap: 6rem;
+   margin-top: 3rem;
+}
+
+#newsletter .newsletter-content form {
+   width: 400px;
+}
+
+#newsletter .newsletter-content form input {
+   width: 400px;
+   padding: 0.6rem 0.5rem;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   margin-bottom: 1rem;
+   font-family: "Roboto", sans-serif;
+}
+
+#newsletter .newsletter-content form input:focus {
+   border: 2px solid var(--second-color);
+}
+
+#newsletter .newsletter-content form button {
+   margin-top: 1rem;
+   width: 100%;
+   padding: 1.5rem 3rem;
+   background-color: var(--second-color);
+   color: var(--color-text);
+   border: 0.5px solid var(--color-text);
+   font-family: "Roboto", sans-serif;
+   font-size: 1.2rem;
+   letter-spacing: 5px;
+   cursor: pointer;
+   text-transform: uppercase;
+}
+
+#newsletter h2 {
+   font-family: "Cormorant Garamond", serif;
+   font-size: 3rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+#newsletter .newsletter-content .content img {
+   width: 400px;
+}
+
+#newsletter .newsletter-content .content h3 {
+   width: 400px;
+   text-align: center;
+   font-size: 24px;
 }
