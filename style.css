@@ -33,6 +33,15 @@ header nav li a {
    font-weight: 700;
 }
 
+.home:hover,
+.creed:hover,
+.characters:hover,
+.premiumEdition:hover {
+   color: var(--second-color);
+   transition: 0.4s;
+   font-size: 23px;
+}
+
 header img {
    height: 4rem;
 }
@@ -73,17 +82,18 @@ section .container img {
 section .container p {
    font-size: 1.5rem;
    margin-top: 1rem;
+   letter-spacing: 1.5px;
 }
 
 section .container button {
    margin-top: 3rem;
-   padding: 1.5rem 5rem;
+   padding: 1.5rem 3rem;
    background-color: black;
    color: var(--color-text);
-   border: 1px solid var(--color-text);
+   border: 0.5px solid var(--color-text);
    font-family: "Roboto", sans-serif;
    font-size: 1.2rem;
-   border-spacing: 10px;
+   letter-spacing: 5px;
    cursor: pointer;
 }
 
@@ -125,6 +135,7 @@ section .container button {
 
 .creed-content p {
    font-size: 1.2rem;
+   letter-spacing: 1.5px;
 }
 
 /* characters */
@@ -171,6 +182,7 @@ section .container button {
    width: 70%;
    font-size: 1.1rem;
    margin: 0 0;
+   letter-spacing: 1.5px;
 }
 
 #characters .container .characters-img {
@@ -194,4 +206,45 @@ section .container button {
 .characters-img .yasuke p {
    font-size: 1.1rem;
    margin-top: 0;
+   letter-spacing: 1.5px;
+}
+
+#premiumEdition {
+   height: 600px;
+   background-color: #000;
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+#premiumEdition > img {
+   height: 600px;
+   position: absolute;
+   right: 0;
+   opacity: 0.2;
+}
+
+#premiumEdition .container {
+   position: absolute;
+   left: 12%;
+   display: flex;
+   gap: 3rem;
+}
+
+#premiumEdition .container img {
+   width: 795px;
+}
+
+#premiumEdition .container h3 {
+   font-family: "Cormorant Garamond", serif;
+   font-size: 2.5rem;
+}
+
+#premiumEdition .container p {
+   font-size: 1.2rem;
+   letter-spacing: 1.5px;
+}
+
+#premiumEdition .container a button {
+   background-color: var(--second-color);
 }
